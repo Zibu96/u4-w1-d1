@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Es1 {
     public static void main(String[] args) {
 
@@ -7,6 +9,8 @@ public class Es1 {
 
         String test = conc("ciao", 2);
         System.out.println("la concatenzaione è: " + test);
+        String[] instruments = new String[5];
+        System.out.println(Arrays.toString(myArr(instruments, "elettrica")));
     }
 
 
@@ -27,5 +31,12 @@ public class Es1 {
     public static String conc(String elem1, int elem2) {
 
         return elem1 + elem2;
+    }
+
+    public static String[] myArr(String[] array, String str1) {
+    array = new String[5];
+
+    return array= new String[]{"chitarra", "ukulele",  str1, "dobro", "basso", "acustica"};
+
     }
 }
